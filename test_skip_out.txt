@@ -1,0 +1,18 @@
+C:\Users\Shubh\Downloads\mypi\bamno>py.test -k "not mac" -v -rsh
+============================= test session starts =============================
+platform win32 -- Python 3.7.0, pytest-3.8.1, py-1.6.0, pluggy-0.7.1 -- c:\users\shubh\downloads\mypi\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Shubh\Downloads\mypi\bamno, inifile:
+plugins: xdist-1.24.1, forked-0.2
+collected 7 items / 3 deselected
+
+test_skip_select.py::test_cal_sub SKIPPED                                [ 25%]
+test_skip_select.py::test_cal_mul PASSED                                 [ 50%]
+test_skip_select.py::test_div PASSED                                     [ 75%]
+test_skip_select.py::test_windoes_2 PASSED                               [100%]
+=========================== short test summary info ===========================
+SKIP [1] test_skip_select.py:10:  You have an advanced python version!
+
+============== 3 passed, 1 skipped, 3 deselected in 0.07 seconds ==============
+
+C:\Users\Shubh\Downloads\mypi\bamno>
