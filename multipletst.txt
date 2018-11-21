@@ -1,0 +1,38 @@
+C:\Users\Shubh\Downloads\mypi\bamno>py.test -v
+============================= test session starts =============================
+platform win32 -- Python 3.7.0, pytest-3.8.1, py-1.6.0, pluggy-0.7.1 -- c:\users\shubh\downloads\mypi\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Shubh\Downloads\mypi\bamno, inifile:
+plugins: xdist-1.24.1, forked-0.2
+collected 5 items
+
+test_multest.py::test_add[10-7-17] PASSED                                [ 20%]
+test_multest.py::test_add[15-8-23] PASSED                                [ 40%]
+test_multest.py::test_add[2-4-6] PASSED                                  [ 60%]
+test_multest.py::test_add[4-5-9] PASSED                                  [ 80%]
+test_multest.py::test_add[66-2-70] FAILED                                [100%]
+
+================================== FAILURES ===================================
+______________________________ test_add[66-2-70] ______________________________
+
+input1 = 66, input2 = 2, output = 70
+
+    @pytest.mark.parametrize("input1, input2, output",
+                              [
+                                  (10,7,17),
+                                  (15,8,23),
+                                  (2,4,6),
+                                  (4,5,9),
+                                  (66,2,70)
+                                ]
+                              )
+    def test_add(input1, input2, output):
+>       assert output == shubh.addition(input1, input2)
+E       assert 70 == 68
+E        +  where 68 = <function addition at 0x000001D2CD324730>(66, 2)
+E        +    where <function addition at 0x000001D2CD324730> = shubh.addition
+
+test_multest.py:15: AssertionError
+===================== 1 failed, 4 passed in 0.06 seconds ======================
+
+C:\Users\Shubh\Downloads\mypi\bamno>
